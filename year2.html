@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student portfolio website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Year 2 Results • Student Portfolio</title>
+</head>
+<body>
+<header>
+  <div class="container navwrap">
+    <div class="brand">
+      <img src="favicon.svg" alt="logo">
+      <h1>Academic Results</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Academic Results</a>
+          <div class="dropdown-menu">
+            <a href="year1.html">Year 1 Results</a>
+            <a href="year2.html">Year 2 Results</a>
+            <a href="year3.html">Year 3 Results</a>
+            <a href="year4.html">Year 4 Results</a>
+          </div>
+        </li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="page1.html">Gallery</a></li>
+        <li><a href="page2.html">Career goals</a></li>
+         <li><a class="btn-outline" href="#" onclick="logout(); return false;">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="container">
+
+  <h2>Year 2 Results</h2>
+  <section class="card" style="margin-bottom:1rem">
+    <table>
+      <thead><tr><th>CourseName</th><th>CourseID</th><th>Grade</th></tr></thead>
+      <tbody>
+        <tr><td>Operating systems</td><td>BIT107</td><td>B+</td></tr>
+        <tr><td>Introduction Python</td><td>BIT112</td><td>B</td></tr>
+        <tr><td>Business Environment</td><td>BBA140</td><td>B+</td></tr>
+        <tr><td>Data Management</td><td>BIT121</td><td>A-</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <a class="btn" href="home.html">Back to Home</a>
+
+</div>
+<footer>
+  <div class="container">
+    <small>© BIT23221101 Samuel Mwelwa. All rights reserved.</small>
+    <small class="muted" id="clock">--:--</small>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

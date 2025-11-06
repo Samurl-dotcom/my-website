@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student portfolio website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Gallery </title>
+</head>
+<body>
+<header>
+  <div class="container navwrap">
+    <div class="brand">
+      <img src="favicon.svg" alt="logo">
+      <h1>My Gallery</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Academic Results</a>
+          <div class="dropdown-menu">
+            <a href="year1.html">Year 1 Results</a>
+            <a href="year2.html">Year 2 Results</a>
+            <a href="year3.html">Year 3 Results</a>
+            <a href="year4.html">Year 4 Results</a>
+          </div>
+        </li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="page1.html">Gallery</a></li>
+        <li><a href="page2.html">Career Goals</a></li>
+      <li><a class="btn-outline" href="#" onclick="logout(); return false;">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div style="text-align: center"> <h2> These are some of my Favourite Photos</h2></div><br>
+  <section class="gallery-container">
+  
+    <img src="assets/images/20210415_083032.jpg" alt="gallery image">
+    <img src="assets/images/20210415_083034.jpg" alt="gallery image">
+    <img src="assets/images/20210415_083037.jpg" alt="gallery image">
+    <img src="assets/images/20210415_083040.jpg" alt="gallery image">
+    <img src="assets/images/20210418_155753.jpg" alt="gallery image">
+    <img src="assets/images/20210418_155755.jpg" alt="gallery image">
+    <img src="assets/images/20210418_155756.jpg" alt="gallery image">
+    <img src="assets/images/20210418_155757.jpg" alt="gallery image">
+    <img src="assets/images/20210419_155442.jpg" alt="gallery image">
+    <img src="assets/images/20210419_155443.jpg" alt="gallery image">
+    <img src="assets/images/20210420_083628.jpg" alt="gallery image">
+    <img src="assets/images/20210420_083635.jpg" alt="gallery image">
+    <img src="assets/images/20210420_083637.jpg" alt="gallery image">
+    <img src="assets/images/20210420_083644.jpg" alt="gallery image">
+    <img src="assets/images/20210420_083647.jpg" alt="gallery image">
+    <img src="assets/images/20210430_075600.jpg" alt="gallery image">
+    <img src="assets/images/20210430_075601.jpg" alt="gallery image">
+    
+    <img src="assets/images/20210625_170011.jpg" alt="gallery image">
+  </section>
+<footer>
+  <div class="container">
+    <small>© BIT23221101 Samuel Mwelwa. All rights reserved.</small>
+    <small class="muted" id="clock">--:--</small>
+  </div>
+  <!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" alt="lightbox image">
+  <button class="prev" onclick="changeSlide(-1)">❮</button>
+  <button class="next" onclick="changeSlide(1)">❯</button>
+</div>
+
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student portfolio website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Profile • Student Portfolio</title>
+</head>
+<body>
+<header>
+  <div class="container navwrap">
+    <div class="brand">
+      <img src="favicon.svg" alt="logo">
+      <h1>Student Portfolio</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Academic Results</a>
+          <div class="dropdown-menu">
+            <a href="year1.html">Year 1 Results</a>
+            <a href="year2.html">Year 2 Results</a>
+            <a href="year3.html">Year 3 Results</a>
+            <a href="year4.html">Year 4 Results</a>
+          </div>
+        </li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="page1.html">Gallery</a></li>
+        <li><a href="page2.html">Career Goals</a></li>
+        <li><a class="btn-outline" href="#" onclick="logout(); return false;">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="container">
+
+  <h2>Profile</h2>
+  <p>Here is a quick summary of my academic journey and achievements.</p>
+  <section class="card" style="margin-bottom:1rem">
+    <table>
+      <thead>
+        <tr><th>Subject</th><th>Marks</th><th>Grade</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Web development</td><td>88</td><td>A+</td></tr>
+        <tr><td>systems Development life cycle</td><td>67</td><td>B</td></tr>
+        <tr><td>Network Design</td><td>73</td><td>B+</td></tr>
+        <tr><td>Introduction to python</td><td>68</td><td>B</td></tr>
+        <tr><td>Advanced programming Java</td><td>74</td><td>B+</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <p class="muted">Throughout my three years at the University of Lusaka, I have developed a chat application using Java, learned data analysis with Python Pandas, and gained practical experience in building and configuring networks. These achievements demonstrate my growing technical skills and commitment to applying knowledge in real-world projects..</p>
+
+</div>
+<footer>
+  <div class="container">
+    <small>© BIT23221101 Samuel Mwelwa. All rights reserved.</small>
+    <small class="muted" id="clock">--:--</small>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student portfolio website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Career Goals </title>
+</head>
+<body>
+<header>
+  <div class="container navwrap">
+    <div class="brand">
+      <img src="favicon.svg" alt="logo">
+      <h1>Student Portfolio</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Academic Results</a>
+          <div class="dropdown-menu">
+            <a href="year1.html">Year 1 Results</a>
+            <a href="year2.html">Year 2 Results</a>
+            <a href="year3.html">Year 3 Results</a>
+            <a href="year4.html">Year 4 Results</a>
+          </div>
+        </li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="page1.html">Gallery</a></li>
+        <li><a href="page2.html">Career Goals</a></li>
+         <li><a class="btn-outline" href="#" onclick="logout(); return false;">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <h2>Career Goals</h2>
+
+  <div class="card">
+    <h3>My Vision</h3>
+    <p>I hope to become an engineer who designs reliable, accessible, and high-performance web applications. 
+       My passion lies in using technology to solve real-world problems and to create tools that positively impact my community. 
+       At the same time, I am deeply committed to my journey in chess while documenting every moment with photographs with the long-term dream of becoming a Chess Grandmaster. 
+       For me, both coding and chess represent creativity, strategy, and discipline.</p>
+  </div>
+
+  <div class="card">
+    <h3>Focus Areas</h3>
+    <ul>
+      <li>Full-stack web development (JavaScript, Python, Java)</li>
+      <li>Backend systems and cloud computing</li>
+      <li>UI/UX design and accessibility</li>
+      <li>Data analysis and AI integration</li>
+      <li>Chess mastery — strategy, tournaments, and continuous improvement</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Career & Personal Roadmap</h3>
+    <p><strong>Short-term (1–2 years):</strong> Complete my studies, contribute to open-source projects, sharpen my programming skills, and actively participate in local chess competitions.</p>
+    <p><strong>Mid-term (3–5 years):</strong> Work as a full-stack developer while achieving higher chess ratings through consistent training, mentorship, and competitive play.</p>
+    <p><strong>Long-term (5+ years):</strong> Lead development teams to create innovative solutions that have a social impact, and pursue the prestigious title of Chess Grandmaster — demonstrating excellence both in technology and on the chessboard.</p>
+  </div>
+
+  <div class="card">
+    <h3>Chess Inspiration</h3>
+    <div style="display: flex; gap: 1rem; align-items: flex-start; flex-wrap: wrap;">
+      <img src="assets/images/Magnus Carlsen.webp" alt="Magnus Carlsen" style="max-width: 200px; border-radius: .6rem; box-shadow: 0 4px 12px rgba(0,0,0,.3);">
+      <p>Magnus Carlsen, the World Chess Champion, inspires me through his creativity, deep calculation, and calmness under pressure. 
+         His ability to turn even the smallest advantages into victories shows the importance of patience and precision. 
+         Studying his games motivates me to keep improving and to pursue excellence both in chess and in life.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>One of My Favorite Chess Games</h3>
+    <video controls width="100%" poster="assets/images/Magnus Carlsen.webps">
+      <source src="assets/video/Mikhail Tal's Amazing Queen Sacrifice to Checkmate.mp4" type="video/mp4">
+      <source src="assets/video/chessgame.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <small>© BIT23221101 Samuel Mwelwa. All rights reserved.</small>
+    <small class="muted" id="clock">--:--</small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

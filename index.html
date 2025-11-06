@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Login – Student Portfolio">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Login  </title>
+</head>
+<body>
+  <div class="container auth card">
+    <h2>Login</h2>
+    <p class="muted">Use any username (≥ 4 chars) and password (≥ 6 chars).</p>
+    <form id="loginForm" novalidate>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="e.g. samuel" autocomplete="username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="••••••••" autocomplete="current-password" required>
+      <div class="actions">
+        <label><input type="checkbox" id="remember"> Remember me</label>
+        <button type="submit">Login</button>
+      </div>
+      <p id="loginError" class="muted" style="color:#fca5a5"></p>
+    </form>
+  </div>
+  <footer>
+    <div class="container">
+      <small>© BIT23221101 Samuel Mwelwa. All rights reserved.</small>
+      <small class="muted" id="clock">--:--</small>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

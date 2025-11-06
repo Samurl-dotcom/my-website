@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student portfolio website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Home • Student Portfolio</title>
+</head>
+<body>
+<header>
+  <div class="container navwrap">
+    <div class="brand">
+      <img src="favicon.svg" alt="logo">
+      <h1>BIT23221101 Samuel Mwelwa</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Academic Results</a>
+          <div class="dropdown-menu">
+            <a href="year1.html">Year 1 Results</a>
+            <a href="year2.html">Year 2 Results</a>
+            <a href="year3.html">Year 3 Results</a>
+            <a href="year4.html">Year 4 Results</a>
+          </div>
+        </li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="page1.html">Gallery</a></li>
+        <li><a href="page2.html">Career Goals</a></li>
+      <li><a class="btn-outline" href="#" onclick="logout(); return false;">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <section class="hero">
+    <div class="card">
+      <h2>Welcome, <span id="studentName">Samuel Mwelwa</span> 👋</h2>
+      <!-- NEW dynamic welcome message -->
+      <p id="welcome" class="muted" style="margin:0.5rem 0;"></p>
+
+      <div style="display:flex; gap:1rem; align-items:center; margin-top:1rem;">
+        <img src="assets/images/profile.jpg" alt="profile" style="width:120px;height:120px;border-radius:1rem;border:1px solid rgba(148,163,184,.25)">
+        <p>
+          I am a student at the University of Lusaka, passionate about creating clean interfaces and building practical, useful tools.  
+          Explore my academic results, profile, and additional pages to learn more about my skills, interests, and projects.
+        </p>
+      </div>
+
+      <div style="margin-top:1rem">
+        <h4>Watch this short clip below to learn how to use this site</h4>
+        <video controls width="100%" poster="assets/images/slide2.svg">
+          <source src="assets/video/intro.mp4" type="video/mp4">
+          <source src="assets/video/intro.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="slideshow" id="slideshow">
+        <button class="navbtn prev" aria-label="Previous slide" onclick="prevSlide()">‹</button>
+        <button class="navbtn next" aria-label="Next slide" onclick="nextSlide()">›</button>
+        <img class="slide active" src="assets/images/slide1.jpg" alt="slide 1">
+        <img class="slide" src="assets/images/slide2.jpg" alt="slide 2">
+        <img class="slide" src="assets/images/slide3.jpg" alt="slide 3">
+        <img class="slide" src="assets/images/slide4.jpg" alt="slide 4">
+        <img class="slide" src="assets/images/slide5.jpg" alt="slide 5">
+        <img class="slide" src="assets/images/slide6.jpg" alt="slide 6">
+      </div>
+      <div class="controls" id="dots"></div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <small>© BIT23221101 Samuel Mwelwa. All rights reserved.</small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
